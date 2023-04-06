@@ -10,7 +10,8 @@ body {
 
 .page {
   width: 1000px;
-  margin: 65px auto 0;
+  margin: 0 auto;
+  padding-top: 65px;
 }
 
 nav {
@@ -21,31 +22,21 @@ nav {
   margin-bottom: 55px;
 }
 
-ul{
-
+ul {
   display: flex;
   gap: 48px;
-
-}
-
-li {
   list-style: none;
-}
-
-nav {
-  display: flex;
-  gap: 48px;
   margin: 0;
   padding: 0;
 }
 
-ul li a {
+a {
   color: #1f1534;
   text-decoration: none;
 }
 
 ul li a {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 ul li a:hover {
@@ -53,14 +44,14 @@ ul li a:hover {
   opacity: 1;
 }
 
-h1 ul {
+ul, h1 {
   font-family: "Mulish", sans-serif;
 }
 
 main {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
@@ -105,10 +96,12 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background: #508f79;
+}
+
 footer {
   font-size: 14px;
-  line-height: 28px;
-
   text-align: center;
 
   margin-top: 80px;
@@ -116,11 +109,15 @@ footer {
 
 footer a {
   font-weight: bold;
-  color: #1f1534
+  opacity: 0.8;
+}
+
+footer a:hover {
+  opacity: 1;
 }
 
 #balls {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
